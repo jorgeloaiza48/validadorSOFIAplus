@@ -1,0 +1,1 @@
+Este código valida o verifica si los documentos relacionados en el archivo de excel están o no registrados en la plataforma del SENA denominada SENASOFIAplus. Los documentos deben ser del mismo tipo, ya sea CC, TI, CE o PEP, y deben estar en la primer columna de la hoja de cálculo.
