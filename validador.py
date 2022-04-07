@@ -111,7 +111,7 @@ def iniciar_validacion():  # esta función realiza el proceso de comprobación d
                 sheet.cell(i + 1,1).fill = fill_pattern_verde  # rellena de verde la celda donde está el documento ya validado
                 wb.save(path_name)  # guarda los cambios hechos en el libro donde están los números de identificación
                 #time.sleep(10)  # espera diez segundos para que el aviso emergente se cierre
-                print("Documento ya resgistrado")
+                print(i+1," Documento ya resgistrado")
             else:
                 # rellena de rojo la celda del documento  si éste no está registrado
                 sheet.cell(i + 1, 1).fill = fill_pattern_rojo
@@ -122,7 +122,7 @@ def iniciar_validacion():  # esta función realiza el proceso de comprobación d
                 # esta línea permite cambiar al frame donde está el formulario para verificar si se está registrado
                 # si no coloco esta línea, no funciona
                 #driver.switch_to.frame(driver.find_element_by_xpath('//*[@id="modal-content"]/iframe'))
-                print("Documento NO registrado")
+                print(i+1," Documento NO registrado")
 
         # esta línea coloca el mensaje "Los documentos han sido validados con éxito"
         Label(root, text="Documentos validados con éxito").place(x=72, y=110)
